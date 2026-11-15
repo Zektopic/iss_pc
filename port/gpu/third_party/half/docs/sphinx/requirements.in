@@ -1,1 +1,6 @@
 rocm-docs-core[api_reference]==1.1.1
+# rocm-docs-core 1.1.1 imports sphinx.util.progress_message, removed in Sphinx 8
+sphinx<8
+# doxysphinx<=3.3.14 on PyPI caps lxml<=5.2.1 (CVE-2026-41066 / GHSA-vfmq-68hx-4jfw); v3.3.15 allows lxml 6.1.0
+doxysphinx @ https://github.com/boschglobal/doxysphinx/archive/refs/tags/v3.3.15.tar.gz
+lxml>=6.1.0
